@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Malicious URL Detection</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+</head>
+<body>
+    <h1>Malicious URL Detection</h1>
+    <form method="POST" action="/predict">
+        <label for="url">Enter a URL:</label>
+        <input type="text" id="url" name="url" placeholder="https://www.example.com">
+        <input type="submit" onclick="alert('{{ prediction }}')">
+    </form>
+    <footer>
+        <p>&copy Powered by: CHUMA RAYMOND ONWUACHU project 2023</p>
+    </footer>
+</body>
+</html>
